@@ -1,0 +1,148 @@
+h1{
+    z-index: 2;
+    position: absolute;
+    padding-left: 20%; 
+    padding-top: 0%; 
+    margin-top: 0%; 
+    font-family: sans-serif;
+    font-size: 800%;
+    font-weight: 900;
+    letter-spacing: -15px;
+    color: saddlebrown;
+}
+.p1{
+    z-index: 2;
+    position: absolute;
+    padding-left: 50%;
+    padding-top: 65px;
+    font-family: sans-serif;
+    font-size: 300%;
+    font-weight: 730;
+    letter-spacing: -5px;
+    color: rgba(187, 92, 25, 0.842);
+}
+
+.p2{
+    z-index: 2;
+    position: absolute;
+    padding-left: 50%;
+    padding-right: 8%;
+    padding-top: 160px;
+    font-family: sans-serif;
+    font-size: 70%;
+    font-weight: 900;
+    text-align: justify;
+    line-height: 16px;
+    letter-spacing: 0px;
+    color: rgba(139, 69, 19, 0.39);
+}
+
+.box{
+    position: relative;
+    box-sizing: border-box;
+    margin-left: 45%;
+    margin-top: 0%;
+    width: 800px; 
+    height: 300px;
+    background: rgb(247, 232, 167);
+    box-shadow: -50px 50px 50px 0px saddlebrown;
+}
+
+body{
+    background-image: url('../assets/foto/bg.png');
+    background-repeat: repeat-y repeat-x;
+    box-sizing: content-box;
+    width: 800px;
+}   
+
+h2{
+    font-family: sans-serif;
+    font-size: 400%;
+    font-weight: 725;
+    letter-spacing: -6px;
+    color: rgb(170, 88, 29);  
+    animation: textshadow 8s infinite alternate
+}  
+@keyframes textshadow {
+	0%   { text-shadow: 1px 1px 0px rgb(73, 33, 0) }
+	10%   { text-shadow: 3px 3px 2px rgb(73, 33, 0) }
+	20%  { text-shadow: 9px 10px 6px rgb(117, 53, 0) }
+	40%  { text-shadow: 10px 15px 6px rgb(117, 53, 0) }
+	60%  { text-shadow: 0px 10px 4px rgb(117, 53, 0) }
+	80%  { text-shadow: -10px 8px 3px rgb(139, 63, 0) }
+	100%  { text-shadow: 1px 5px 1px rgb(199, 90, 0) }
+}
+.headh2{
+    padding-left: 45%;
+    padding-top: 30%;
+}
+
+.container {
+   box-sizing: border-box;
+   width: 800px;
+   padding-left: 45%;
+    }
+
+#video{
+    width: 800px;
+    padding-left: 45%;
+}
+
+#Seitenreiter{
+    z-index: 4;
+    box-sizing: border-box;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.603);
+    background-color: rgba(139, 69, 19, 0.767);
+    position: fixed;
+    padding: 12px;
+    margin-top: 0%;
+    margin-left: 360px;
+    border-radius: 20px 20px 20px 20px;
+}
+
+#Seitenreiter a:link, #Seitenreiter a:visited{
+color: black;
+}
+
+#Seitenreiter a:hover{
+color: rgb(247, 232, 167);
+}
+
+#Seitenreiter #aktuell a
+{
+background-color: rgb(247, 232, 167);
+}
+
+.reiterschrift{
+    font-family: sans-serif;
+    font-weight: 701;
+    font-size: 12px;
+    color: black;
+    text-decoration: none;
+}
+
+/* Style all font awesome icons */
+.fa {
+    padding: 10px;
+    font-size: 10px;
+    width: 20px;
+    text-align: center;
+    text-decoration: none;
+    margin-top: 228px;
+    margin-left: 340px;
+    border-radius: 50%;
+  }
+  
+  /* Add a hover effect if you want */
+  .fa:hover {
+    opacity: 0.7;
+  }
+  
+  /* Set a specific color for each brand */
+  
+  /* Instagram */
+  .fa-instagram {
+      background: saddlebrown;
+    color: rgb(247, 232, 167);
+  }
+
