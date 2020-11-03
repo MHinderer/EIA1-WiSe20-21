@@ -1,4 +1,4 @@
-h1{
+#h1{
     position: absolute;
     margin-left: 20%; 
     margin-top: 0%; 
@@ -34,22 +34,36 @@ h1{
     color: rgba(139, 69, 19, 0.39);
 }
 
+p{
+    color: black;
+    font-family: sans-serif;
+    font-size: 100%;
+    font-weight: 650;
+    text-align: justify;
+    line-height: 30px;
+    letter-spacing: 0px;
+}
+
 .box{
     position: relative;
     box-sizing: border-box;
-    margin-left: 45%;
+    margin-left: 23%;
     margin-top: 0%;
+    padding-top: 0%;
     width: 800px; 
     height: 300px;
     background: rgb(247, 232, 167);
-    box-shadow: -50px 50px 50px 0px saddlebrown;
+    box-shadow: -50px 50px 50px 0px rgba(131, 62, 13, 0.719);
 }
 
 body{
     background-image: url('../assets/foto/bg.png');
     background-repeat: repeat-y repeat-x;
     box-sizing: content-box;
+    margin-left: 0%;
+    font-family: sans-serif
     width: 800px;
+    
 }   
 
 h2{
@@ -70,51 +84,86 @@ h2{
 	100%  { text-shadow: 1px 5px 1px rgb(199, 90, 0) }
 }
 .headh2{
-    margin-left: 45%;
-    margin-top: 30%;
+    margin-left: 23%;
+    margin-top: 10%;
 }
 
 .container {
    box-sizing: border-box;
    width: 800px;
-   padding-left: 45%;
+   padding-left: 23%;
     }
+
+.container2{
+    box-sizing: border-box;
+    width: 800px;
+    margin-left: 23%;
+}
 
 #video{
     width: 800px;
-    padding-left: 45%;
+    padding-left: 23%;
 }
 
-#Seitenreiter{
-    box-sizing: border-box;
-    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.603);
-    background-color: rgba(139, 69, 19, 0.767);
+nav{
     position: fixed;
-    padding: 12px;
+    top: 0%;
+    right: 101px;
     margin-top: 0%;
-    margin-left: 360px;
-    border-radius: 20px 20px 20px 20px;
+    padding-top: 0%;
 }
 
-#Seitenreiter a:link, #Seitenreiter a:visited{
-color: black;
+ul {
+    list-style-type: none;
+    display: flex;
+    margin: 0%;
+    padding: 0%;
+    overflow: hidden;
+    background-color: rgba(139, 69, 19, 0.795);
+    border-radius: 5px;
 }
 
-#Seitenreiter a:hover{
-color: rgb(247, 232, 167);
+li {
+    position: flex;
+    top: 0%;
+    right: 17.2%;
 }
 
-#Seitenreiter #aktuell a
-{
-background-color: rgb(247, 232, 167);
-}
-
-.reiterschrift{
+li a {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    color: black;
     font-family: sans-serif;
     font-weight: 701;
     font-size: 12px;
+    padding: 11px;
+    border-radius: 5px;
+}
+
+li a:hover {
+    color:  rgb(247, 232, 167);
+    opacity: 50%;
+}
+
+.current {
+    background-color: rgb(247, 232, 167);
+    font-size: 14px;
+}
+
+#portfolio:hover{
     color: black;
-    text-decoration: none;
+    opacity: 50%;
+}
+
+#about:hover{
+    color: black;
+    opacity: 50%;
+}
+
+#contact:hover{
+    color: black;
+    opacity: 50%;
 }
 
 /* Style all font awesome icons */
@@ -131,7 +180,7 @@ background-color: rgb(247, 232, 167);
   
   /* Add a hover effect if you want */
   .fa:hover {
-    opacity: 0.7;
+    opacity: 0.5;
   }
   
   /* Set a specific color for each brand */
@@ -139,6 +188,6 @@ background-color: rgb(247, 232, 167);
   /* Instagram */
   .fa-instagram {
       background: saddlebrown;
-    color: white;
+    color: rgb(247, 232, 167);
   }
 
