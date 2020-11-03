@@ -1,8 +1,7 @@
 h1{
-    z-index: 2;
     position: absolute;
-    padding-left: 20%; 
-    padding-top: 0%; 
+    margin-left: 20%; 
+    margin-top: 0%; 
     margin-top: 0%; 
     font-family: sans-serif;
     font-size: 800%;
@@ -11,10 +10,9 @@ h1{
     color: saddlebrown;
 }
 .p1{
-    z-index: 2;
     position: absolute;
-    padding-left: 50%;
-    padding-top: 65px;
+    margin-left: 50%;
+    margin-top: 114px;
     font-family: sans-serif;
     font-size: 300%;
     font-weight: 730;
@@ -23,11 +21,10 @@ h1{
 }
 
 .p2{
-    z-index: 2;
     position: absolute;
-    padding-left: 50%;
-    padding-right: 8%;
-    padding-top: 160px;
+    margin-left: 50%;
+    margin-right: 8%;
+    margin-top: 160px;
     font-family: sans-serif;
     font-size: 70%;
     font-weight: 900;
@@ -73,8 +70,8 @@ h2{
 	100%  { text-shadow: 1px 5px 1px rgb(199, 90, 0) }
 }
 .headh2{
-    padding-left: 45%;
-    padding-top: 30%;
+    margin-left: 45%;
+    margin-top: 30%;
 }
 
 .container {
@@ -89,7 +86,6 @@ h2{
 }
 
 #Seitenreiter{
-    z-index: 4;
     box-sizing: border-box;
     box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.603);
     background-color: rgba(139, 69, 19, 0.767);
