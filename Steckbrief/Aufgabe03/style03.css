@@ -12,7 +12,7 @@
 .p1{
     position: absolute;
     margin-left: 50%;
-    margin-top: 114px;
+    margin-top: 125px;
     font-family: sans-serif;
     font-size: 300%;
     font-weight: 730;
@@ -97,6 +97,71 @@ h2{
 .container2{
     box-sizing: border-box;
     width: 800px;
+    margin-left: 23%;
+}
+
+.box2{
+    position: relative;
+    display: block;
+    box-sizing: border-box;
+    width: 250px;
+    margin-left: 23%;
+    background-color: rgba(170, 170, 170, 0.753);
+}
+
+.box3{
+    position: relative;
+    display: block;
+    box-sizing: border-box;
+    width: 400px;
+    height: 100px;
+    margin-left: 23%;
+    background-color: rgba(170, 170, 170, 0.753);
+}
+
+.box4{
+    position: relative;
+    display: inline-block;
+    box-sizing: border-box;
+    margin-left: 23%;
+    margin-top: 12px;
+    background-color: rgba(170, 170, 170, 0.753);
+}
+
+.p3{
+    color: whitesmoke;
+    font-family: sans-serif;
+    font-size: 100%;
+    font-weight: 510;
+    text-align: justify;
+    line-height: 30px;
+    padding: 5px;
+    margin-top: 7px;
+    margin-bottom: 7px;
+}
+
+.p4{
+    color: whitesmoke;
+    font-family: sans-serif;
+    font-size: 100%;
+    font-weight: 100;
+    text-align: justify;
+    line-height: 0px;
+    padding: 5px;
+    margin-top: 7px;
+    margin-bottom: 7px;
+}
+
+.p5{
+    color: rgba(170, 170, 170, 0.753);
+    font-family: sans-serif;
+    font-size: 75%;
+    font-weight: lighter;
+    text-align: justify;
+    letter-spacing: 1px;
+    line-height: 16px;
+    padding: 0px;
+    margin-top: 20px;
     margin-left: 23%;
 }
 
