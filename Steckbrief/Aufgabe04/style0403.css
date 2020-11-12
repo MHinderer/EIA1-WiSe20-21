@@ -13,6 +13,7 @@ body{
 
 .karte{
     position: relative;
+    top: 75px;
 }
 
 .wrapper{
