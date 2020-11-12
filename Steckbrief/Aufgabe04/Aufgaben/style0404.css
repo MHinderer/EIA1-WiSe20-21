@@ -1,0 +1,52 @@
+@font-face{
+    font-family: jellyka1;
+    src: url(/Aufgabe04/fonts/Jellyka\ Delicious\ Cake\(1\).ttf) format("ttf");
+}
+
+@font-face{
+    font-family: jellyka2;
+    src: url(/Aufgabe04/fonts/jellyka_delicious_cake1-webfont.eot) format("eot");
+}
+
+@font-face{
+    font-family: jellyka3;
+    src: url(/Aufgabe04/fonts/jellyka_delicious_cake1-webfont.svg) format("svg");
+}
+
+@font-face{
+    font-family: jellyka4;
+    src: url(/Aufgabe04/fonts/jellyka_delicious_cake1-webfont.woff2) format("woff2");
+}
+
+body{
+    background-image: url(../assets/foto/bg0404.png);
+    height: 700px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.karte{
+    display: block;
+    position: relative;
+    top: 150px;
+}
+
+.karte_txt{
+    font-family: jellyka1, jellyka2, jellyka3, jellyka4;
+    color: white;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 30px 40px 50px 40px;
+}
+
+.karte_txt h1{
+    font-size: 70px;
+}
+
+.karte_txt p{
+    font-size: 25px;
+}
+

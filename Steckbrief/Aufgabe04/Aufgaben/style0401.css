@@ -1,0 +1,57 @@
+body{
+    background-image:url(../assets/foto/Aufgabe09_bg1.png);
+    background-repeat: repeat-x repeat-y;
+    font-family: sans-serif;
+    font-size: 300%;
+    color: ivory;
+    height: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.karte{
+    position: relative;
+
+}
+
+.wrapper{
+    position:
+}
+
+#pinguin{
+    position: absolute;
+    top: 230px;
+    right: -5px;
+}
+
+#busch{
+    position: absolute;
+    top: -50px;
+    left: -50px;
+}
+
+.textbox1{
+    position: absolute;
+    top: 40px;
+    left: 110px;
+}
+
+.p1{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.textbox2{
+    position: absolute;
+    top: 145px;
+    left: 110px;
+}
+
+.p2{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+}

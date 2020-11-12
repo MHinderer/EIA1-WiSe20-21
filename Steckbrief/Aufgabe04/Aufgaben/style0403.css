@@ -1,0 +1,128 @@
+body{
+    background-image:url(../assets/foto/Aufgabe04_bg.png);
+    background-repeat: repeat-x repeat-y;
+    font-family: sans-serif;
+    font-size: 300%;
+    color: ivory;
+    height: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.karte{
+    position: relative;
+    top: 150px;
+}
+
+.wrapper{
+    position:
+}
+
+.textbox1{
+    position: absolute;
+    top: 45px;
+    left: 80px;
+}
+
+.p1{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.sterne {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.stern1{
+    position: absolute;
+    top: 275px;
+    left: 80px; 
+    width: 65px;
+    height: 65px;
+    background: url("../assets/foto/Aufgabe04_stern.png");
+    background-repeat: no-repeat;
+}
+
+.stern1{
+    position: absolute;
+    top: 275px;
+    left: 80px; 
+    width: 65px;
+    height: 65px;
+    background: url("../assets/foto/Aufgabe04_stern.png");
+    background-repeat: no-repeat;
+}
+
+.stern1:hover{
+    position: absolute;
+    top: 275px;
+    left: 80px; 
+    width: 65px;
+    height: 65px;
+    background-image: url(../assets/foto/Aufgabe04_stern_hover.png);
+    background-repeat: no-repeat;
+}
+
+.stern2{
+    position: absolute;
+    top: 180px;
+    left: 180px;
+    width: 65px;
+    height: 65px;
+    background: url("../assets/foto/Aufgabe04_stern.png");
+    background-repeat: no-repeat;
+}
+
+.stern2:hover{
+    position: absolute;
+    top: 180px;
+    left: 180px; 
+    width: 65px;
+    height: 65px;
+    background-image: url(../assets/foto/Aufgabe04_stern_hover.png);
+    background-repeat: no-repeat;
+}
+
+.stern3{
+    position: absolute;
+    top: 235px;
+    left: 330px;
+    width: 65px;
+    height: 65px;
+    background: url("../assets/foto/Aufgabe04_stern.png");
+    background-repeat: no-repeat;
+}
+
+.stern3:hover{
+    position: absolute;
+    top: 235px;
+    left: 330px; 
+    width: 65px;
+    height: 65px;
+    background-image: url(../assets/foto/Aufgabe04_stern_hover.png);
+    background-repeat: no-repeat;
+}
+
+.stern4{
+    position: absolute;
+    top: 300px;
+    left: 470px;
+    width: 65px;
+    height: 65px;
+    background: url("../assets/foto/Aufgabe04_stern.png");
+    background-repeat: no-repeat;
+}
+
+.stern4:hover{
+    position: absolute;
+    top: 300px;
+    left: 470px; 
+    width: 65px;
+    height: 65px;
+    background-image: url(../assets/foto/Aufgabe04_stern_hover.png);
+    background-repeat: no-repeat;
+}

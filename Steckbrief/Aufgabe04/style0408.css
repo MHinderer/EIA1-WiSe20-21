@@ -1,0 +1,27 @@
+body{
+    background-image: url(../assets/foto/Aufgabe04_bg5.png);
+    height: 700px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.karte{
+    display: block;
+    position: relative;
+    top: 150px;
+}
+
+.youtube{
+    position: absolute;
+    top: 44px;
+    left: 20px;
+}
+
+.banner{
+    position: absolute;
+    z-index: 1;
+    bottom: 0%;
+    right: 0%;
+}
