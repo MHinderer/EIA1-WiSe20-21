@@ -29,14 +29,11 @@ var ges2018: number = afrika2018 + suedAmerika2018 + europa2018 + nordAmerika201
 
 
 
-
 //Berechnungen
 
-//Afrika
-var prozentAfrikages:number=((afrika2018 / ges2018) * 100).toFixed(2);
-
+//Afrika   
+var prozentAfrikages: number = ((afrika2018 / ges2018) * 100).toFixed(2);
 var wachstumAfrika: number = (((afrika2018 / afrika2008) - 1) * 100).toFixed(2);
-
 var afrikaCO2: number = (afrika2018 - afrika2008);
 
 
@@ -128,3 +125,40 @@ var australiaCO2: number = (australia2018 - australia2008).toFixed(2);
     console.log('Für Nord Australien hat sich 2018 im Vergleich zu 2008 die Emission um ' + wachstumAustralia + '% verändert');
     console.log('2018 im Vergleich zu 2008 sind das ' + australiaCO2 + 'kg CO2”');
     console.log('-   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   ');
+
+//Funktionen
+
+    function Afrika2018(){
+    var result='Die Emission von Afrika 2018 ist: '+ afrika2018 +'kg CO2';
+    }
+    Afrika2018();
+    function AfrikaInProzent(){
+    var result='Relativ zur Gesamtemission der Welt verursacht Afrika damit ' + prozentAfrikages + '%';
+    }
+    AfrikaInProzent();
+    function AfrikaWachstum(){
+    var result='Für Afrika hat sich 2018 im Vergleich zu 2008 die Emission um ' + wachstumAfrika + '% verändert';
+    }
+    AfrikaWachstum();
+    function AfrikaCO2(){
+    var result='2018 im Vergleich zu 2008 sind das ' + afrikaCO2 + 'kg CO2”';
+    }
+    AfrikaCO2();
+
+
+
+    window.addEventListener('load', function(){
+    document.querySelector("h1").innerHTML="Karbon Dioxid Emissionen in Afrika";
+    });
+    window.addEventListener('load', function(){
+        document.querySelector("h2").addEventListener('click', Afrika2018);
+    });
+    window.addEventListener('load', function(){
+    document.querySelector("h2").addEventListener('click', AfrikaInProzent);
+    });
+    window.addEventListener('load', function(){
+    document.querySelector("h2").addEventListener('click', AfrikaWachstum);
+    });
+    window.addEventListener('load', function(){
+    document.querySelector("h2").addEventListener('click', AfrikaCO2);
+    });
