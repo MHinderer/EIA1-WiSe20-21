@@ -45,7 +45,7 @@ window.addEventListener('load', function(){
 });
 
 window.addEventListener('load', function(){
-    document.querySelector(".southhamerica").addEventListener("click", function()
+    document.querySelector(".southamerica").addEventListener("click", function()
     {
     domManipulator("South America", suedAmerika2018, suedAmerika2008);
     })
@@ -76,8 +76,8 @@ window.addEventListener('load', function(){
 //Funktion
 function domManipulator(kontinent:string, kontinent2018:number, kontinent2008:number)
 {
-    document.querySelector(".titleRegion").innerHTML = kontinent;
-    document.querySelector(".titleRegion2").innerHTML = kontinent;
+    document.querySelector("#titleRegion").innerHTML = kontinent;
+    document.querySelector("#titleRegion2").innerHTML = kontinent;
     document.querySelector("#absoluteEmi").innerHTML = kontinent2018.toFixed(2) + "CO2 kg";
     document.querySelector("#totalEmi").innerHTML = (100 / (gesEmission / kontinent2018)).toFixed(2) + "%";
     document.querySelector("#growthPerEmi").innerHTML = (((kontinent2018 / kontinent2008) - 1) * 100).toFixed(2) + "%";
