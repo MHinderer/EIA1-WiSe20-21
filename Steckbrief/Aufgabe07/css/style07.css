@@ -1,0 +1,77 @@
+html, body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    text-align: center;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    background-color: black;
+}
+
+#pad {
+    position: absolute;
+    top: 0%;
+    display: flex;
+    height: 500px;
+    width: 500px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.box {
+    position: relative;
+    height: 150px;
+    width: 150px;
+    margin: 5px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box:hover {
+    opacity: 70%;
+    cursor: pointer;
+}
+
+.box:active{
+    background-color: darken(10%);
+    transform: scale(1.1);
+    transition: all .01s;
+}
+
+.pad-1, .pad-2, .pad-3 {
+    border: 3px groove #8a8afc;
+    background: linear-gradient(to top, #5252f1, #8a8afc);
+}
+
+.pad-4, .pad-5, .pad-6, .pad-7 {
+    border: 3px groove #e76fc9;
+    background: linear-gradient(to top, #e640bc, #e76fc9);
+}
+
+.pad-8, .pad-9 {
+    border: 3px groove rgb(236, 208, 116);
+    background: linear-gradient(to top, #f0c740, #ecd074);
+}
+
+.button{
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0px;
+}
+
+.button:hover {
+    opacity: 70%;
+    cursor: pointer;
+}
+
+.button:active{
+    background-color: darken(10%);
+    transform: scale(1.1);
+    transition: all .01s;
+}
