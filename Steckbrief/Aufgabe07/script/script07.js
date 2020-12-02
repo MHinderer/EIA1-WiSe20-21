@@ -72,6 +72,5 @@ function melody(hihat, kick, snare) {
         playSample(kick);
         playSample(snare);
     }, 500);
-    console.log('es geht nicht');
 }
 //# sourceMappingURL=script07.js.map

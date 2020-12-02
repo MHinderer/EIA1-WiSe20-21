@@ -87,5 +87,4 @@ function melody(hihat: number, kick: number, snare: number) {
         playSample(kick);
         playSample(snare);
     }, 500);
-    console.log('es geht nicht');
 }
