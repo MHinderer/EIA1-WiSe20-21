@@ -1,0 +1,135 @@
+html, body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    text-align: center;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(235, 213, 141);
+    background-image:
+      linear-gradient(rgba(255,255,255,.5) 2px, transparent 2px),
+      linear-gradient(90deg, rgba(255,255,255,.5) 2px, transparent 2px),
+      linear-gradient(rgba(255,255,255,.28) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(255,255,255,.28) 1px, transparent 1px);
+    background-size: 100px 100px, 100px 100px, 20px 20px, 20px 20px;
+    background-position: -2px -2px, -2px -2px, -1px -1px, -1px -1px;
+}
+
+#pad {
+    position: absolute;
+    display: flex;
+    height: 500px;
+    width: 500px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.box {
+    position: relative;
+    height: 150px;
+    width: 150px;
+    margin: 5px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box:hover {
+    opacity: 70%;
+    cursor: pointer;
+}
+
+.box:active{
+    background-color: darken(10%);
+    transform: scale(1.1);
+    transition: all .01s;
+}
+
+.pad-1, .pad-2, .pad-3 {
+    border: 3px groove #df793a;
+    background: linear-gradient(to top, #814722, #df793a);
+}
+
+.pad-4, .pad-5, .pad-6 {
+    border: 3px groove #814722;
+    background: linear-gradient(to top, #4e2b15, #814722);
+}
+
+.pad-7, .pad-8, .pad-9 {
+    border: 3px groove #4e2b15;
+    background: linear-gradient(to top,  #25150b, #4e2b15);
+}
+
+.button {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 3px;
+    font-size: 50px;
+}
+
+.button:hover {
+    opacity: 70%;
+    cursor: pointer;
+}
+
+.button:active {
+    transform: scale(1.1);
+    transition: all .01s;
+}
+
+.is-hidden {
+    display: none !important;
+}
+
+.active {
+    color: #922900;
+}
+
+.inactive {
+    color: #ffffff;
+}
+
+.button3 {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 3px;
+    font-size: 50px;
+}
+
+.button3:hover {
+    opacity: 70%;
+    cursor: pointer;
+}
+
+.button3:active {
+    transform: scale(1.1);
+    transition: all .01s;
+}
+
+
+.button4 {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 3px;
+    font-size: 50px;
+}
+
+.button4:hover {
+    opacity: 70%;
+    cursor: pointer;
+}
+
+.button4:active {
+    transform: scale(1.1);
+    transition: all .01s;
+}
