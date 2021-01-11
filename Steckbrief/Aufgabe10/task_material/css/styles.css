@@ -9,7 +9,7 @@ main {
     text-align: center;
 }
 
-#counter {
+p {
     color: grey;
 }
 
@@ -83,5 +83,24 @@ main {
 }
 
 .trash:hover {
+    color: black;
+}
+
+button {
+    cursor: pointer;
+    transition: 0.1s;
+    transform: scale(120%);
+    opacity: 75%;
+    color: rgb(133, 136, 155);
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border-color: darkslategrey;
+}
+
+#start {
+    color: black;
+}
+
+#stop {
     color: black;
 }

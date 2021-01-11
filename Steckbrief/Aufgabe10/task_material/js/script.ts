@@ -22,6 +22,9 @@ var inputDOMElement: HTMLInputElement;
 var addButtonDOMElement: HTMLElement;
 var todosDOMElement: HTMLElement;
 var counterDOMElement: HTMLElement;
+var donecounterDOMElement: HTMLElement;
+var notdonecounterDOMElement: HTMLElement;
+
 
 
 window.addEventListener("load", function (): void {
@@ -31,6 +34,8 @@ window.addEventListener("load", function (): void {
     addButtonDOMElement = document.querySelector("#addButton");
     todosDOMElement = document.querySelector("#todos");
     counterDOMElement = document.querySelector("#counter");
+    donecounterDOMElement = document.querySelector("#donecounter");
+    notdonecounterDOMElement = document.querySelector("#notdonecounter");
 
 
     addButtonDOMElement.addEventListener("click", addTodo);
@@ -64,11 +69,28 @@ function drawListToDOM(): void {
     }
 
     updateCounter();
+    twoCounters();
 }
 
 function updateCounter(): void {
     counterDOMElement.innerHTML = object.length + " in total";
 }
+
+function twoCounters(): void {
+    var donecounter: number = 0;
+    var notdonecounter: number = 0;
+    for (var index: number = 0; index < object.length; index++) {
+        if (object[index].todosChecked == true) {
+            donecounter++;
+        }
+        else {
+            notdonecounter++;
+        }
+    }
+    donecounterDOMElement.innerHTML = donecounter + " done";
+    notdonecounterDOMElement.innerHTML = notdonecounter + " not done yet";
+}
+
 
 
 function addTodo(): void {
@@ -88,6 +110,7 @@ function addTodo(): void {
 function toggleCheckState(index: number): void {
     object[index].todosChecked = !object[index].todosChecked;
     drawListToDOM();
+
 }
 
 
@@ -95,3 +118,49 @@ function deleteTodo(index: number): void {
     object.splice(index, 1);
     drawListToDOM();
 }
+
+
+declare var Artyom: any;
+var artyomStart: boolean = false;
+
+window.addEventListener("load", function(): void {
+    const artyom: any = new Artyom();
+    
+    artyom.addCommands({
+        indexes: ["erstelle Aufgabe *"],
+        smart: true,
+        action: function(i: any, wildcard: string): void {
+            console.log("Neue Aufgabe wird erstellt: " + wildcard);
+            object.unshift({
+                todosText: wildcard,
+                todosChecked: false
+            });
+            drawListToDOM();
+        }
+    });
+
+    document.getElementById("start").addEventListener("click", function (): void {
+        startArtyom();
+        artyom.say("Sage ERSTELLE AUFGABE");
+    });
+
+    document.getElementById("stop").addEventListener("click", function (): void {
+        stopArtyom();
+        artyom.say("Heide Getreide, bis Baldrian und ein Kuss auf die Nuss!");
+    });
+    
+    function startArtyom(): void {
+        artyom.initialize({
+                    lang: "de-DE",
+                    continuous: true,
+                    listen: true,
+                    interimResults: true,
+                    debug: true
+        });
+    }
+    
+    function stopArtyom(): void {
+        artyom.fatality();
+    }
+    
+});
