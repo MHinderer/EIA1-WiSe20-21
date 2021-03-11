@@ -1,0 +1,200 @@
+html {
+    width: 1280px;
+    height: 800px;
+    background-image: radial-gradient(#F7BE81, #61380B);
+    font-family: sans-serif;
+}
+
+body {
+    padding: 0px;
+    margin: 0px;
+    overflow: hidden;
+}
+
+#footer {
+    position: absolute;
+    text-align: center;
+    bottom: 0px;
+    width: 100%;
+    background-color: #424242;
+    color: #D8D8D8;
+    font-size: 10px;
+    font-weight: 300;
+}
+
+.gridEASY {
+    display: grid;
+    grid-template-columns: repeat( auto-fit, 120px );
+    grid-auto-rows: 120px;
+    grid-gap: 5px;
+    justify-content: center;
+    perspective: 500px;
+    max-width: 500px;
+    margin-top: 240px;
+    margin-left: 390px;
+}
+
+.gridHARD {
+    display: grid;
+    grid-template-columns: repeat( auto-fit, 120px );
+    grid-auto-rows: 120px;
+    grid-gap: 5px;
+    justify-content: center;
+    perspective: 1000px;
+    max-width: 1000px;
+    margin-top: 100px;
+    margin-left: 140px;
+}
+
+.gridMIDDLE {
+    display: grid;
+    grid-template-columns: repeat( auto-fit, 120px );
+    grid-auto-rows: 120px;
+    grid-gap: 5px;
+    justify-content: center;
+    perspective: 500px;
+    max-width: 500px;
+    margin-top: 100px;
+    margin-left: 390px;
+}
+    
+.card { 
+display: inline-flex;
+align-items: center;
+justify-content: center;
+margin: 2px; 
+font-size: 10px;
+} 
+
+.card:hover {
+    opacity: 70%;
+    cursor: pointer;
+}
+
+
+.cardEASY {
+display: inline-flex;
+align-items: center;
+justify-content: center;
+margin: 2px; 
+transform-style: preserve-3d; 
+transition: transform 0.5s; 
+font-size: 40px;
+}
+
+.cardEASY:hover {
+    opacity: 70%;
+    cursor: pointer;
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+.gamefieldEASY {
+    display: none;
+}
+
+.gamefieldMIDDLE {
+    display: none;
+}
+
+.gamefieldHARD {
+    display: none;
+}
+
+
+.menü {
+    justify-content: center;
+    justify-self: center;
+    background-color: #424242;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 125px;
+    border-style: groove;
+    border-radius: 10px;
+    border-color: black;
+    width: 400px;
+    height: 250px;
+    padding: 0px;
+}
+
+button {
+    position: relative;
+    display: inline-block;
+    background-color: #F7BE81;
+    border-radius: 10px;
+    border: 2px solid black;
+    width: 200px;
+    margin-top: 35px;
+    margin-left: 100px;
+    padding: 8px;
+    color: black;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+button:hover {
+    opacity: 70%;
+    cursor: pointer;
+}
+
+#afterGame {
+    display: none;
+    background-color: #424242;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 250px;
+    border-style: groove;
+    border-radius: 10px;
+    border-color: black;
+    width: 400px;
+    height: 250px;
+    padding: 0px;
+}
+
+.score {
+    font-size: 30px;
+    font-weight: 800;
+    justify-content: center;
+    align-items: center;
+    margin-left: 450px;
+}
+
+.winMessage {
+    font-size: 60px;
+    font-weight: 800;
+    animation-name: textshadow;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+#memory {
+    margin-top: 40px;
+    margin-left: 440px;
+    font-size: 80px;
+    font-weight: 900;
+    animation-name: memoryshadow;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes textshadow {
+	0%   { text-shadow: 1px 1px 0px rgb(19, 18, 18) }
+	10%   { text-shadow: 3px 3px 2px rgb(19, 18, 18) }
+	20%  { text-shadow: 9px 10px 6px rgb(19, 18, 18) }
+	40%  { text-shadow: 10px 15px 6px rgb(19, 18, 18) }
+	60%  { text-shadow: 0px 10px 4px rgb(32, 31, 31) }
+	80%  { text-shadow: -10px 8px 3px rgb(32, 31, 31) }
+	100%  { text-shadow: 1px 5px 1px rgb(32, 31, 31) }
+}
+
+@keyframes memoryshadow {
+    0%   { text-shadow: 0px 10px 10px rgb(48, 60, 75) }
+	10%   { text-shadow: -50px 0px 0px rgb(59, 115, 184) }
+	20%  { text-shadow: 0px 50px 0px rgb(60, 163, 91) }
+	40%  { text-shadow: 50px 0px 0px rgb(5, 92, 20) }
+    80%  { text-shadow: 0px -50px 0px rgb(119, 26, 26) }
+	100%  { text-shadow: 1px -1px 0px rgb(46, 38, 38) }
+}
